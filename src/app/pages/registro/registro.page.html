@@ -1,0 +1,54 @@
+<ion-content [fullscreen]="true">
+  <div>
+  <ion-grid>
+    <br>
+    <ion-row>
+      <ion-col class ="ion-text-center">
+        <img src="assets/img/logoinicio.png" alt="logo" style="width: 80%; margin-top: 20px;">
+      </ion-col>
+    </ion-row>
+      <ion-row class ="ion-text-center">
+        <ion-col>
+          <h1 class="titulo-app">Registrarse</h1>
+        </ion-col>
+
+      </ion-row>
+      <ion-card>
+          <form [formGroup] = "formularioRegistro">
+            <ion-item>
+              <ion-label class="ion-text-center" position="floating">Usuario</ion-label>
+              <ion-input formControlName="nombre" type="text"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label class="ion-text-center" position="floating">Contraseña</ion-label>
+            <ion-input formControlName="password" type="password"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label class="ion-text-center" position="floating">Repetir Contraseña</ion-label>
+          <ion-input formControlName="confirmacion-password" type="password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label class="ion-text-center" position="floating">Correo</ion-label>
+        <ion-input formControlName="email" type="text"></ion-input>
+    </ion-item>
+          </form>
+      </ion-card>
+     <ion-checkbox class ="ion-text-center" style="margin-left: 50px;">Acepto los terminos y condiciones</ion-checkbox>
+     <br>
+     <br>
+      <ion-row class ="ion-justify-content-center">
+        <ion-col>
+          <ion-button routerLink="/inicio" expand="block" color="light">Volver</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button (click)="registrar()" expand="block" color="light">Registrarse</ion-button>
+        </ion-col>
+      </ion-row>
+  </ion-grid>
+</div>
+
+
+
+
+</ion-content>
+

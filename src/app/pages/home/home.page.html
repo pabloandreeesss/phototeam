@@ -1,0 +1,57 @@
+<ion-content [fullscreen]="true">
+  <div>
+    <ion-chip>
+      <ion-avatar>
+        <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
+      <ion-label>{{data.usuario}}</ion-label>
+      <ion-icon name="close-circle"></ion-icon>
+    </ion-chip>
+
+    <ion-button class="config-button" fill="clear">
+      <ion-icon name="settings-outline"></ion-icon>
+    </ion-button>
+
+    <br>
+    <br>
+    <br>
+    <ion-card>
+      <img alt="paine" src="assets/img/paine.webp" />
+      <ion-card-header>
+        <ion-card-title>Torres del Paine</ion-card-title>
+        <ion-card-subtitle>Roberto fuentes 07/04/2022</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Fotografia realizada con canon S50 lente 70px 
+      </ion-card-content>
+    </ion-card>
+
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="schedule">
+          <ion-icon name="home-outline"></ion-icon>
+          <ion-badge>6</ion-badge>
+        </ion-tab-button>
+
+        <ion-tab-button tab="search" routerLink="/search">
+          <ion-icon name="search-outline"></ion-icon>
+        </ion-tab-button>
+    
+        <ion-tab-button tab="camera" routerLink="/upload">
+          <ion-icon name="camera-outline"></ion-icon>
+        </ion-tab-button>
+    
+        <ion-tab-button tab="user" routerLink="/profile">
+          <ion-icon name="person-circle-outline"></ion-icon>
+        </ion-tab-button>
+    
+      </ion-tab-bar>
+    </ion-tabs>
+
+
+</div>
+
+
+</ion-content>
+

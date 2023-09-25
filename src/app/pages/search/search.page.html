@@ -1,0 +1,45 @@
+<ion-content [fullscreen]="true">
+  <div>
+
+    <ion-header>
+      <ion-toolbar>
+      </ion-toolbar>
+      <ion-toolbar>
+        <ion-searchbar></ion-searchbar>
+      </ion-toolbar>
+    </ion-header>
+
+    <br>
+    <br>
+    <ion-col class ="ion-text-center">
+        <img src="assets/img/search.png" alt="search">
+      </ion-col>
+
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="schedule" routerLink="/home">
+          <ion-icon name="home-outline"></ion-icon>
+          <ion-badge>6</ion-badge>
+        </ion-tab-button>
+
+        <ion-tab-button tab="search">
+          <ion-icon name="search-outline"></ion-icon>
+        </ion-tab-button>
+    
+        <ion-tab-button tab="camera" routerLink="/upload">
+          <ion-icon name="camera-outline"></ion-icon>
+        </ion-tab-button>
+    
+        <ion-tab-button tab="user" routerLink="/profile">
+          <ion-icon name="person-circle-outline"></ion-icon>
+        </ion-tab-button>
+    
+      </ion-tab-bar>
+    </ion-tabs>
+
+
+</div>
+
+
+</ion-content>
+
