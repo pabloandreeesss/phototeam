@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,13 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  data: any; // Debes declarar la variable "data" para almacenar los datos del usuario
+  data: any; 
 
-  constructor(private activatedRoute: ActivatedRoute, private router: Router) {
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    private router: Router,
+    private navCtrl: NavController 
+  ) {
     this.activatedRoute.queryParams.subscribe(params => {
       if (this.router.getCurrentNavigation()?.extras.state) {
         this.data = this.router.getCurrentNavigation()?.extras.state?.['user'];
@@ -18,5 +23,9 @@ export class HomePage {
         this.router.navigate(['/inicio']);
       }
     });
+  }
+
+  redirigirAConfig() {
+    this.navCtrl.navigateForward('/config');
   }
 }

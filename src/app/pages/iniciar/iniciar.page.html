@@ -25,16 +25,20 @@
       </ion-item>
         </form>
     </ion-card>
+    <div class="centered-link">
+      <a href="/olvidar-contraseña">¿Ha olvidado su contraseña?</a>
+    </div>
+    <br>
       <ion-row>
       </ion-row>
-      <ion-row class ="ion-justify-content-center">
+      <ion-row class="ion-text-center ion-justify-content-center">
         <ion-col>
-          <ion-button routerLink="/inicio" expand="block" color="light">Volver</ion-button>
+          <button class="glow-on-hover" routerLink="/inicio" type="button">Volver</button>
         </ion-col>
         <ion-col>
-          <ion-button (click)="ingresar()" expand="block" color="light">Iniciar Sesion</ion-button>
+          <button class="glow-on-hover" (click)="ingresar()" type="button">Iniciar sesion</button>
         </ion-col>
-      </ion-row>
+      </ion-row>    
   </ion-grid>
 </div>
 
