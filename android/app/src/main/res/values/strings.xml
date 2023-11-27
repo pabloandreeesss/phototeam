@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">MyAppProgra</string>
+    <string name="title_activity_main">MyAppProgra</string>
+    <string name="package_name">com.jsmobiledev.pablo</string>
+    <string name="custom_url_scheme">com.jsmobiledev.pablo</string>
+</resources>

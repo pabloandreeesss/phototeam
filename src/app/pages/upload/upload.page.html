@@ -1,18 +1,19 @@
 <ion-content [fullscreen]="true">
   <div>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <ion-col class="ion-text-center ion-align-items-center">
-      <img src="assets/img/subir.jpg" alt="search" style="width: 80%; height: auto; margin-left: 30px;">
-    </ion-col>
-    <br>
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col size="12">
+          <ion-button (click)="takePhoto()" expand="block" fill="clear" shape="round">
+            Tomar Foto
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
 
-
+    <ion-list>
+      <!-- Contenido de tu lista aquí -->
+    </ion-list>
 
     <ion-tabs>
       <ion-tab-bar slot="bottom">
@@ -24,21 +25,16 @@
         <ion-tab-button tab="search" routerLink="/search">
           <ion-icon name="search-outline"></ion-icon>
         </ion-tab-button>
-    
+
         <ion-tab-button tab="camera">
           <ion-icon name="camera-outline"></ion-icon>
         </ion-tab-button>
-    
+
         <ion-tab-button tab="user" routerLink="/profile">
           <ion-icon name="person-circle-outline"></ion-icon>
         </ion-tab-button>
-    
       </ion-tab-bar>
     </ion-tabs>
 
-
-</div>
-
-
+  </div>
 </ion-content>
-
